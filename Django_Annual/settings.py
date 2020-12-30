@@ -29,7 +29,7 @@ DEBUG = True
 
 
 WHITENOISE_USE_FINDERS = True
-ALLOWED_HOSTS = ['https://team-unhackables.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
