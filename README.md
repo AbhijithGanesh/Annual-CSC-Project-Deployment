@@ -18,6 +18,6 @@ This will download the virtual-environment to run the django-project. If you wan
   3. Then activate your virtual environment 
   4. Then Install Django using  ```pip install django```
   5. Once it is installed, run ```python manage.py runserver```
-  This should run the server, if there are any errors saying ```ModuleNotFound``` Then ---> ```pip install <modulename```
+  This should run the server, if there are any errors saying ```ModuleNotFound``` Then ---> ```pip install <modulename>```
   
 
