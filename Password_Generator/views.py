@@ -45,7 +45,7 @@ def registration_form(request):
         if form.is_valid():
             form.save()
             #user = User.objects.create_user()
-            return redirect('/Intermediate/redirection.html')
+            return redirect('Password_Generator/HTML-JS-CSS/Intermediate/redirection.html')
         else:
             form = RegistrationForm()
     return render(request, 'Password_Generator/HTML-JS-CSS/register.html', {'form': form})
@@ -65,30 +65,8 @@ def Password(request):
     _val_2 = val[33:65]
     _val_3 = val[65:97]
     _val_4 = val[97:129]
-    def mail(val):
-        from .mail import email
-        data = list(Registration.objects.all())
-        _email = []
-        for i in data:
-                _email.append(i.Email)
-        a = _email.pop(-1)
-        email(val,a)
-    mail(val)
     return render(request, 'Password_Generator/HTML-JS-CSS/Generator.html', {'password_1': _val_1,
                                                                              'password_2': _val_2,
                                                                              'password_3': _val_3,
                                                                              'password_4': _val_4, })
    
-
-'''
-def Login():
-    _data = list(Registration.objects.all())
-    _names = []
-    _organization =[]
-    for i in _data:
-        _names.append(i.Name)
-        _organization.append(i.Organization)
-    for i in range(len(_names)):
-        user = User.objects.create_user(username = _names[i], password = _organization[i])
-Login()
-'''
