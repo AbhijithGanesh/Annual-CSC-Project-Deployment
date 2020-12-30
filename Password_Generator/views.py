@@ -6,8 +6,6 @@ import csv
 from django.contrib.auth.models import User
 from .Caller_Module import callerfile
 
-def hello(request):
-    return HttpResponse('HELLOWORLD!')
 
 
 def landing_page(request):
@@ -45,7 +43,7 @@ def registration_form(request):
         if form.is_valid():
             form.save()
             #user = User.objects.create_user()
-            return redirect('/redirection.html')
+            return redirect('redirection.html')
         else:
             form = RegistrationForm()
     return render(request, 'Password_Generator/HTML-JS-CSS/register.html', {'form': form})
