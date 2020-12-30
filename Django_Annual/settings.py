@@ -126,12 +126,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
                     os.path.join(CURRENT_PATH, 'Django_Annual/static'),
 )
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST_USER = 'teamunhackables@gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True 
-EMAIL_HOST_PASSWORD = 'Te@mUnH@ck@bles'
+
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Extra places for collectstatic to find static files.
