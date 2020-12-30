@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-                    os.path.join(CURRENT_PATH, 'static'),
+                    os.path.join(CURRENT_PATH, 'Django_Annual/static'),
 )
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST_USER = 'teamunhackables@gmail.com'
