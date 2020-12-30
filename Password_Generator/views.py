@@ -45,7 +45,7 @@ def registration_form(request):
         if form.is_valid():
             form.save()
             #user = User.objects.create_user()
-            return redirect('/Intermediate/redirection.html')
+            return redirect('Password_Generator/Intermediate/redirection.html')
         else:
             form = RegistrationForm()
     return render(request, 'Password_Generator/HTML-JS-CSS/register.html', {'form': form})
