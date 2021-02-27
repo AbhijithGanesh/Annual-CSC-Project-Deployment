@@ -10,8 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ['SECRET_KEY']
 
 
-DEBUG = bool('False')
-
+DEBUG = False
 WHITENOISE_USE_FINDERS = True
 ALLOWED_HOSTS = ['127.0.0.1', 'testing-team-unhackables.herokuapp.com',]
 
