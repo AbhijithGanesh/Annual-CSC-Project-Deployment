@@ -1,5 +1,3 @@
-
-
 from pathlib import Path
 import os
 CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -11,11 +9,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#r^0va6*2^u5!gp$c68*gw)kok_pzthse%h7iahil_q*#$sci0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 WHITENOISE_USE_FINDERS = True
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -95,7 +92,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC+5:30'
 
 USE_I18N = True
 
