@@ -6,11 +6,13 @@ CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['SECRET_KEY']
+<<<<<<< HEAD
+
+=======
+>>>>>>> 98c2ee8564a359156d8d4c8e7c592cb63f92079d
 
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 WHITENOISE_USE_FINDERS = True
 ALLOWED_HOSTS = ['*']
 
@@ -100,15 +102,23 @@ USE_L10N = True
 
 USE_TZ = True
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 98c2ee8564a359156d8d4c8e7c592cb63f92079d
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-                    os.path.join(CURRENT_PATH, 'Django_Annual/static'),
+                    os.path.join(CURRENT_PATH, 'static'),
 )
 
+<<<<<<< HEAD
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 
+=======
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+>>>>>>> 98c2ee8564a359156d8d4c8e7c592cb63f92079d
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 
