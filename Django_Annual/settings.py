@@ -12,7 +12,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 DEBUG = True
 WHITENOISE_USE_FINDERS = True
-ALLOWED_HOSTS = ['127.0.0.1', 'testing-team-unhackables.herokuapp.com',]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
